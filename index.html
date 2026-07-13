@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal resume and portfolio site">
+    <title>Johnny L. Dale Jr. | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">JohnnyLDaleJr</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/hero-bg.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Johnny L. Dale Jr.</h1>
+                <h2 class="hero-title">Software Engineer & Technologist</h2>
+                <p class="hero-description">Combining nearly 30 years of hands-on technical experience with a BS in Software Engineering to build innovative solutions at the intersection of hardware and software.</p>
+                <div class="hero-buttons">
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="assets/profile.jpg" alt="Johnny L. Dale Jr." class="profile-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="about-bg">
+            <video class="about-video" autoplay muted loop playsinline>
+                <source src="assets/about.MOV" type="video/mp4">
+            </video>
+            <div class="about-overlay"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>I'm a detail-oriented Software Engineer with nearly 30 years of industrial technical experience and a newly earned BS in Software Engineering from Western Governors University (March 2026). What sets me apart is the rare combination of deep hands-on electrical and mechanical knowledge with formal software development training — I understand not just how code runs, but how the physical systems it controls actually work.</p>
+
+                    <p>My career began on the factory floor troubleshooting PLCs, motor controls, robotics, and SCADA systems, and has evolved into building modern full-stack applications with React, Angular, Python, PHP, and Java. I've programmed Allen-Bradley and Siemens PLCs, maintained high-speed bottling and packaging lines, and more recently developed web apps with Spring Boot backends, deployed with Docker, and integrated with third-party APIs. That level of experience — from ladder logic to REST APIs — lets me solve problems at every level of the stack.</p>
+
+                    <p>I'm passionate about building software that makes a real impact, whether that means optimizing industrial processes, creating intuitive user interfaces, or connecting legacy systems to modern cloud platforms. Every project I take on benefits from the perspective of someone who has seen technology from both sides: the hardware that makes things move and the code that makes them smart.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience</h2>
+            <div class="tabs-wrapper fade-in">
+                <button class="tab-arrow tab-arrow-left" id="tabLeft" aria-label="Scroll left">
+                    <span class="arrow-glow"></span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="tabs-container" id="tabsContainer">
+                    <div class="tabs-track" id="tabsTrack">
+                        <button class="tab-pill active" data-tab="industrial">Industrial</button>
+                        <button class="tab-pill" data-tab="software">Software</button>
+                    </div>
+                </div>
+                <button class="tab-arrow tab-arrow-right" id="tabRight" aria-label="Scroll right">
+                    <span class="arrow-glow"></span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="tab-panel active" id="industrial">
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Maintenance Technician</h3>
+                            <span class="timeline-date">11/2025 - Present</span>
+                        </div>
+                        <h4>Coca Cola Consolidated</h4>
+                        <p>Performing maintenance and repairs on production equipment in a beverage manufacturing facility. Troubleshooting mechanical and electrical systems, maintaining conveyors, packaging machinery, and processing equipment to ensure continuous production operations.</p>
+                        <ul class="timeline-tags">
+                            <li>Mechanical & Electrical Repair</li>
+                            <li>Conveyor Systems</li>
+                            <li>Packaging Machinery</li>
+                            <li>Preventive Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Maintenance Technician</h3>
+                            <span class="timeline-date">7/2025 - 11/2025</span>
+                        </div>
+                        <h4>Frito Lay</h4>
+                        <p>Troubleshot, repaired, and installed pneumatic and hydraulic systems, control valves, centrifugal and positive displacement pumps. Troubleshot and repaired AC/DC electrical systems, read schematics, and used electrical testing equipment. Used preventative maintenance systems and work order tracking.</p>
+                        <ul class="timeline-tags">
+                            <li>Mechanical & Electrical Repair</li>
+                            <li>Conveyor Systems</li>
+                            <li>Packaging Machinery</li>
+                            <li>Preventive Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content career-break">
+                        <div class="timeline-header">
+                            <h3>Career Break</h3>
+                            <span class="timeline-date">9/2024 - 7/2025</span>
+                        </div>
+                        <h4>Focused on Completing Bachelor's Degree</h4>
+                        <p>Paused career to turn full focus to completing B.S. in Software Engineering at Western Governors University.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>E & I Technician</h3>
+                            <span class="timeline-date">5/2011 - 9/2024</span>
+                        </div>
+                        <h4>Roehm Americas, Osceola, AR</h4>
+                        <p>In this position I was responsible for ensuring the runtime of machinery used in a continuous process that created and recycled monomer, which produced acrylic sheet, a milling system, and all components to silo storage / pneumatic conveyance. These objectives required me to troubleshoot and make necessary mechanical, electrical, or hydraulic repairs to proprietary equipment. While using tools such as: volt meters, amp meters, plc manipulation (rslogix 500, Allen Bradley) and being able to run ladder logic programs. Other duties included precision motor and pump installation/alignment, hot oil system rebuilding, cylinder maintenance, and record keeping.</p>
+                        <ul class="timeline-tags">
+                            <li>PLC (Rslogix 500, Allen Bradley)</li>
+                            <li>Ladder Logic</li>
+                            <li>Mechanical/Electrical/Hydraulic Repair</li>
+                            <li>Motor & Pump Installation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Line Maintenance Technician</h3>
+                            <span class="timeline-date">7/2017 - 3/2018</span>
+                        </div>
+                        <h4>Simplot, West Memphis, AR</h4>
+                        <p>In this role I was responsible for responding to technical trouble calls as well as take part in our department's preventative maintenance and predictive maintenance programs. This role required me to troubleshoot and make repairs to production equipment used in the processing and bagging of frozen vegetables for the frozen foods industry. Products packaged included the frozen brands of Swanson, & Great Value. The equipment that I serviced in this role included; vertical bagging machines, empty case erectors, bucket elevators, scale sorters, fastback conveyors, hydraulic tote dumps, & check weighs. All PM work and trouble calls where logged into JDE, our work order and parts tracking system.</p>
+                        <ul class="timeline-tags">
+                            <li>Preventive & Predictive Maintenance</li>
+                            <li>Vertical Bagging Machines</li>
+                            <li>JDE Work Order System</li>
+                            <li>Frozen Foods Industry</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Automation Controls Technician</h3>
+                            <span class="timeline-date">3/2017 - 7/2017</span>
+                        </div>
+                        <h4>Borg Warner, Water Valley, MS</h4>
+                        <p>In this role I was responsible for responding to technical challenges and issues that would otherwise hinder the production process. This role requires me to troubleshoot and make repairs to production equipment used in the manufacturing and testing of electronic solenoids for the automotive industry. The equipment includes; Robots, conveyors, hydraulic and pneumatic presses, servomotors, servo drives, injection mold machines, and various other rslogix 5000 driven PLC applications. Robots include various Staubli and Epson models. My duties require me to log work performed in a Computerized Maintenance Management System (CMMS) and checkout parts needed for repairs using a parts management software system.</p>
+                        <ul class="timeline-tags">
+                            <li>Staubli & Epson Robots</li>
+                            <li>Rslogix 5000 PLC</li>
+                            <li>Hydraulic & Pneumatic Presses</li>
+                            <li>CMMS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Plant Automation Technician</h3>
+                            <span class="timeline-date">7/2016 - 3/2017</span>
+                        </div>
+                        <h4>Prairie Farms Dairy, Memphis, TN</h4>
+                        <p>In my current role I am responsible for responding to technical challenges and issues that would otherwise hinder the production process. This role requires me to troubleshoot and make mechanical and electrical repairs to equipment used to transport raw milk to storage tanks, pasteurization and homogenization processes, bottle milk and other liquid products, case bottled liquid products, stack cases of liquid product, transport, palletize, and shrink wrap stacked cases of liquid product. I am also responsible for providing technical support to our blow mold department where resin is pneumatically conveyed from storage silos and extruded and molded into gallon or half gallon jugs. Some of the equipment I make repairs to includes; ink stream daters, product labelers, case washers, casing machines, case stackers, in floor case chain conveyors, centrifugal pumps, conveyance blowers, stack pushers etc.</p>
+                        <ul class="timeline-tags">
+                            <li>Mechanical & Electrical Repair</li>
+                            <li>Pasteurization & Homogenization</li>
+                            <li>Blow Mold Department</li>
+                            <li>Conveyor Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Plant Engineering Technician</h3>
+                            <span class="timeline-date">5/2016 - 7/2016</span>
+                        </div>
+                        <h4>United Parcel Services, Memphis, TN</h4>
+                        <p>As a Plant Engineering Technician, my responsibilities included; responding to sort process trouble calls, making mechanical and electrical repairs to conveyors and sortation equipment, performing preventive maintenance on equipment that was not scheduled for use, and document all repairs made along with parts used in such repairs. In this position, minimizing downtime was considered utmost priority, and most repairs, if possible, were attempted within a two-hour window, which occurred between sorts. The equipment included; belt and chain driven conveyors, shoe sorters, paddle diverters, monorail conveyors, power industrial trucks, Taylor Dunn personal carrier carts, and various other conveyor-based applications to accomplish the loading and unloading of trailers.</p>
+                        <ul class="timeline-tags">
+                            <li>Conveyor & Sortation Repair</li>
+                            <li>Preventive Maintenance</li>
+                            <li>Mechanical & Electrical</li>
+                            <li>Minimizing Downtime</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Line Technician</h3>
+                            <span class="timeline-date">8/2010 - 5/2011</span>
+                        </div>
+                        <h4>Technicolor Home Entertainment Services, Memphis, TN</h4>
+                        <p>I responded to calls when line problems exist. I also participated in direct troubleshooting activities in the event of equipment failures. I made necessary adjustments and repairs to electrical and mechanical components of production equipment such as; Bosch CM5 wrap machines, Shanklin Omni wrappers, and Shanklin heat tunnels to ensure the quality of our final product. I was also responsible for making electrical and mechanical repairs to various types of conveyors used to transport materials for pre-production and the final products for distribution. I made efforts to minimize unscheduled downtime by performing routine preventive maintenance on equipment during scheduled downtime, and performed changeovers on aforementioned machinery to enable the production of various sized packages of DVD & Blu-Ray products.</p>
+                        <ul class="timeline-tags">
+                            <li>Bosch CM5 Wrap Machines</li>
+                            <li>Shanklin Wrappers & Heat Tunnels</li>
+                            <li>Preventive Maintenance</li>
+                            <li>Changeovers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Facilities & Housekeeping Supervisor</h3>
+                            <span class="timeline-date">3/2008 - 3/2010</span>
+                        </div>
+                        <h4>Southland Gaming & Racing, West Memphis, AR</h4>
+                        <p>In this function my role was to help oversee the overall upkeep of the Southland Gaming and Racing Facility. While delegating duties to a staff of ten, I was responsible for upholding the Universal service standards and implementing these standards among group members. I was also active in maintaining a team atmosphere, while ensuring the completion of all assigned task.</p>
+                        <ul class="timeline-tags">
+                            <li>Staff Supervision</li>
+                            <li>Universal Service Standards</li>
+                            <li>Team Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Line Technician</h3>
+                            <span class="timeline-date">5/2007 - 7/2010</span>
+                        </div>
+                        <h4>Marietta Corporation, Olive Branch, MS</h4>
+                        <p>I responded to calls of an assigned production area when line problems exist. I also participated in direct troubleshooting activities in the event of equipment failures. I made necessary adjustments and repairs to electrical and mechanical components of production equipment such as; Bosch blow wrap machines, Jones carton packers, Acma 711 & 731 model wrappers, Mazzoni mixers, plodders, and presses to ensure the quality of our final product. I also made efforts to minimize equipment downtime by performing routine preventive maintenance on equipment that was not scheduled for use during the daily run, and perform changeovers on carton packers, wrappers, and stamping machines to enable the production of various soap products.</p>
+                        <ul class="timeline-tags">
+                            <li>Bosch Blow Wrap Machines</li>
+                            <li>Acma 711 & 731 Wrappers</li>
+                            <li>Mazzoni Mixers & Presses</li>
+                            <li>Preventive Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Cable Installation Technician</h3>
+                            <span class="timeline-date">4/2007 - 5/2007</span>
+                        </div>
+                        <h4>Source Broadband Services, Memphis, TN</h4>
+                        <p>I performed installs and disconnects, adhering to Source procedures and safe work practices, NEC and NESC requirements, and local ordinances in order to provide requested services such as; cable TV, digital telephone, and/or high speed internet service. I also pre-wired single unit dwellings in order to provide "ready hook-up" capabilities.</p>
+                        <ul class="timeline-tags">
+                            <li>Cable TV Installation</li>
+                            <li>Digital Telephone</li>
+                            <li>High Speed Internet</li>
+                            <li>NEC/NESC Requirements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Forklift Repair Technician</h3>
+                            <span class="timeline-date">5/2001 - 4/2007</span>
+                        </div>
+                        <h4>Family Dollar DC, West Memphis, AR</h4>
+                        <p>My Duties Included the maintenance and repair of several different types of DC electric Material Handling Equipment such as; man-ups, reach trucks, sit-downs, automatic pallet jacks, walkie riders, and personal carrier carts. In maintaining this equipment, I was required to make repairs on or replace electrical components such as; traction control cards, DC Motors, SCRs, N/O switches, N/C switches, Main Interface Boards, contactors, relays, and solenoid switches etc.. I also performed hot work such as; welding and cutting metal. My duties also included the up keep and repair of computer peripherals used in association with production standards such as; PDAs, tethered/RF scanners, and handheld computer docking stations.</p>
+                        <ul class="timeline-tags">
+                            <li>DC Electric Material Handling</li>
+                            <li>Electrical Component Repair</li>
+                            <li>Welding & Cutting</li>
+                            <li>Computer Peripherals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Industrial Maintenance Technician</h3>
+                            <span class="timeline-date">12/1998 - 5/2001</span>
+                        </div>
+                        <h4>Family Dollar DC, West Memphis, AR</h4>
+                        <p>My Duties Included trouble shooting, repair, and preventive maintenance of electro pneumatic controlled T/C, and Accuglide conveyors of a Bushman conveyor system. My duties also included independently troubleshooting mechanical and electrical failures to a component level of electromechanical equipment such as; Signode case strappers, tape machines, trash compactor, & card board bailer etc. In this position I also responded to emergency trouble calls, provided equipment operator information concerning any equipment modifications that may affect the operator's normal routine, logged all issues found, and documented corrective actions taken to repair such issues using MP2 database program.</p>
+                        <ul class="timeline-tags">
+                            <li>Bushman Conveyor Systems</li>
+                            <li>Signode Case Strappers</li>
+                            <li>Electromechanical Troubleshooting</li>
+                            <li>MP2 Database</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div class="skills-section fade-in">
+                    <h3 class="skills-heading">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">MIG / TIG Welding / Soldering</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PLC (Rslogix 500 / 5000)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Hydraulics / Pneumatics</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Electrical / Mechanical Repair</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Robotics (Staubli / Epson)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CMMS / Preventive Maintenance</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="software">
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineering Student</h3>
+                                <span class="timeline-date">7/2023 - 3/2026</span>
+                            </div>
+                            <h4>Western Governors University</h4>
+                            <p>Completed B.S. in Software Engineering. Built skills in full-stack web development, data structures, algorithms, and modern programming practices through hands-on projects and coursework.</p>
+                            <ul class="timeline-tags">
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="tab-note fade-in">Building software projects as I continue to grow my skills.</p>
+
+                <div class="skills-section fade-in">
+                    <h3 class="skills-heading">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML / CSS / JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python / PHP / Lua</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C# / Dart / Swift</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Angular / React / Flutter</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker / PostgreSQL / GitLab</span>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title fade-in">Education</h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-icon">🎓</div>
+                    <h3>B.S. Software Engineering</h3>
+                    <h4>Western Governors University, Millcreek, UT</h4>
+                    <span class="education-date">7/2023 - 3/2026</span>
+                    <p>Completed degree with focus on software development, systems design, and modern programming practices.</p>
+                    <img src="assets/degree.jpg" alt="B.S. Software Engineering Degree" class="degree-img">
+                </div>
+                <div class="education-card fade-in">
+                    <div class="education-icon">🔧</div>
+                    <h3>Industrial Technical Experience</h3>
+                    <h4>Nearly 30 Years Hands-On</h4>
+                    <span class="education-date">1998 - Present</span>
+                    <p>Extensive experience with PLC programming (Rslogix 500, Rslogix 5000, Allen Bradley), robotics (Staubli, Epson), electrical systems, hydraulics, pneumatics, MIG/TIG welding, and industrial maintenance across multiple industries.</p>
+                    <img src="assets/project+.png" alt="Project+" class="degree-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/wordie.png" alt="Wordie Game" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Wordie</h3>
+                        <p>A browser-based word puzzle game inspired by the New York Times Wordle. Built as a passion project featuring a clean, intuitive interface where players guess five-letter words with color-coded feedback. The backend handles word validation and game state management, while the frontend delivers smooth, responsive gameplay.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://wordie-fhnz.onrender.com/index.html" class="btn btn-project" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/worldmap.png" alt="WorldMap Project" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>WorldMap</h3>
+                        <p>An interactive single-page web application built with Angular for WGU's D280 JavaScript Programming course. Features an SVG world map that dynamically pulls and displays detailed country data from the World Bank API, including region, capital, income level, population, and country size in square kilometers. Clicking a country triggers event binding that transmits the country code to the parent component, displaying metrics in a clean two-column layout.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>HTML/CSS</span>
+                            <span>World Bank API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://worldmap-jnc0.onrender.com" class="btn btn-project" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/triplet.png" alt="Triplet Vacation App" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Triplet</h3>
+                        <p>A secure, database-backed Android mobile application built for WGU's D308 Mobile Application Development course. Triplet is a vacation planning app featuring clean navigation, an intuitive user interface, and object-oriented design. Users can create, manage, and track their vacation itineraries with data persistence and a polished mobile experience.</p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>Java</span>
+                            <span>SQLite</span>
+                            <span>XML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://triplet-54ffab.gitlab.io" class="btn btn-project" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <p>I'm always open to discussing new opportunities, creative projects, or ways to bring innovative solutions to your team. Let's connect!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:dalejr@gmail.com">dalejr@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:8706350843">(870) 635-0843</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <span>Marion, AR 72364</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Social</span>
+                            <div class="social-links">
+                                <a href="#" target="_blank" aria-label="GitHub">GitHub</a>
+                                <a href="https://www.linkedin.com/in/johnny-l-d-17a643306/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="assets/resume.pdf" download>Resume</a>
+                    <a href="#hero">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
