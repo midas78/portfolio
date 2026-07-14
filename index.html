@@ -31,6 +31,14 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
         <div class="hero-bg">
             <video class="hero-video" autoplay muted loop playsinline>
                 <source src="assets/hero-bg.mp4" type="video/mp4">
@@ -44,7 +52,7 @@
                 <h2 class="hero-title">Software Engineer & Technologist</h2>
                 <p class="hero-description">Combining nearly 30 years of hands-on technical experience with a BS in Software Engineering to build innovative solutions at the intersection of hardware and software.</p>
                 <div class="hero-buttons">
-                    <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                    <a href="assets/Johnny Dale Resume.pdf" class="btn btn-primary" download>Download Resume</a>
                     <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
             </div>
@@ -84,27 +92,17 @@
 
     <!-- Experience Section -->
     <section class="section section-alt" id="experience">
+        <div class="experience-orb experience-orb--1"></div>
+        <div class="experience-orb experience-orb--2"></div>
         <div class="container">
             <h2 class="section-title fade-in">Experience</h2>
             <div class="tabs-wrapper fade-in">
-                <button class="tab-arrow tab-arrow-left" id="tabLeft" aria-label="Scroll left">
-                    <span class="arrow-glow"></span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M15 18l-6-6 6-6"/>
-                    </svg>
-                </button>
                 <div class="tabs-container" id="tabsContainer">
                     <div class="tabs-track" id="tabsTrack">
                         <button class="tab-pill active" data-tab="industrial">Industrial</button>
                         <button class="tab-pill" data-tab="software">Software</button>
                     </div>
                 </div>
-                <button class="tab-arrow tab-arrow-right" id="tabRight" aria-label="Scroll right">
-                    <span class="arrow-glow"></span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
-                </button>
             </div>
 
             <div class="tab-panel active" id="industrial">
@@ -339,8 +337,8 @@
                             <li>Electromechanical Troubleshooting</li>
                             <li>MP2 Database</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <div class="skills-section fade-in">
@@ -380,22 +378,59 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3>Software Engineering Student</h3>
-                                <span class="timeline-date">7/2023 - 3/2026</span>
+                                <h3>Wordie — Full-Stack Word Puzzle Game</h3>
+                                <span class="timeline-date">Spring Boot Project</span>
                             </div>
-                            <h4>Western Governors University</h4>
-                            <p>Completed B.S. in Software Engineering. Built skills in full-stack web development, data structures, algorithms, and modern programming practices through hands-on projects and coursework.</p>
+                            <p>A full-stack Wordle-like word game built with Java Spring Boot and PostgreSQL, deployed to Render. The backend serves a REST API powered by Spring Boot (JPA, Hibernate) with PostgreSQL for stateful storage via Supabase, and an H2 in-memory fallback for local development. The frontend is responsive HTML/CSS/JS with mobile-first design, dark mode, and an iframe-based menu overlay. The game draws from an XLS-backed word seed loader containing roughly 2,300 curated 5-letter words from the official Wordle answer bank, with REST endpoints for random word selection, validation, game stats, and user auth. The application is containerized with Docker, deployed via a Render Web Service with environment-driven PostgreSQL connection config, and uses localStorage-based client-side session management with guest mode support.</p>
                             <ul class="timeline-tags">
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                                <li>React</li>
-                                <li>Angular</li>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>PostgreSQL</li>
+                                <li>Maven</li>
+                                <li>Docker</li>
+                                <li>Render</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Interactive World Map Application</h3>
+                                <span class="timeline-date">Angular 19 Project</span>
+                            </div>
+                            <p>Built a single-page interactive world map application featuring click-to-zoom SVG navigation with animated transitions, an IndexedDB-backed client-side data cache, and real-time country metadata display including capital, region, population, area, income level, and flag. Integrated the World Bank API via Angular HTTP services and implemented a responsive side panel UI with loading skeletons, keyboard accessibility (ESC to close), and tooltip hover states. Containerized with a multi-stage Docker build using Node 22 to nginx Alpine.</p>
+                            <ul class="timeline-tags">
+                                <li>Angular 19</li>
+                                <li>TypeScript</li>
+                                <li>Docker</li>
+                                <li>World Bank API</li>
                                 <li>HTML/CSS</li>
+                                <li>IndexedDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Triplet — Vacation & Excursion Planner</h3>
+                                <span class="timeline-date">Android Project</span>
+                            </div>
+                            <p>Built a single-activity Android app with 6 fragments for creating, viewing, editing, and deleting vacations and excursions. Integrated Room (SQLite ORM) for all CRUD operations across two entities (Vacation, Excursion) with DAOs. Implemented date-picker dialogs with business-rule constraints including start date must be today or later, end date must be after start date, and excursions must fall within the vacation window. Added SMS sharing via Intent and real-time date-based alert toasts. Used RecyclerView and CardView for list displays, Material3 theme, and manual fragment transactions for navigation. Compiled to a signed APK and published via a custom landing page hosted on GitLab Pages.</p>
+                            <ul class="timeline-tags">
+                                <li>Android</li>
+                                <li>Java</li>
+                                <li>Room SQLite</li>
+                                <li>Material3</li>
+                                <li>RecyclerView</li>
+                                <li>Fragments</li>
+                                <li>APK</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <p class="tab-note fade-in">Building software projects as I continue to grow my skills.</p>
 
                 <div class="skills-section fade-in">
                     <h3 class="skills-heading">Technical Skills</h3>
@@ -439,7 +474,7 @@
                     <div class="education-icon">🎓</div>
                     <h3>B.S. Software Engineering</h3>
                     <h4>Western Governors University, Millcreek, UT</h4>
-                    <span class="education-date">7/2023 - 3/2026</span>
+                    <span class="education-date">7/2023 - 4/2026</span>
                     <p>Completed degree with focus on software development, systems design, and modern programming practices.</p>
                     <img src="assets/degree.jpg" alt="B.S. Software Engineering Degree" class="degree-img">
                 </div>
@@ -485,7 +520,7 @@
                     </div>
                     <div class="project-content">
                         <h3>WorldMap</h3>
-                        <p>An interactive single-page web application built with Angular for WGU's D280 JavaScript Programming course. Features an SVG world map that dynamically pulls and displays detailed country data from the World Bank API, including region, capital, income level, population, and country size in square kilometers. Clicking a country triggers event binding that transmits the country code to the parent component, displaying metrics in a clean two-column layout.</p>
+                        <p>An interactive single-page web application built with Angular for WGU's D280 JavaScript Programming course. Features an SVG world map that dynamically pulls and displays detailed country data from the World Bank API, including region, capital, income level, population, and country size in square kilometers. Clicking a country <span class="more-text">triggers event binding that transmits the country code to the parent component, displaying metrics in a clean two-column layout.</span><button class="read-more-btn">more</button></p>
                         <div class="project-tech">
                             <span>Angular</span>
                             <span>TypeScript</span>
@@ -509,6 +544,7 @@
                             <span>Java</span>
                             <span>SQLite</span>
                             <span>XML</span>
+                            <span>APK</span>
                         </div>
                         <div class="project-links">
                             <a href="https://triplet-54ffab.gitlab.io" class="btn btn-project" target="_blank">Live Demo</a>
@@ -526,29 +562,8 @@
             <div class="contact-content">
                 <div class="contact-info fade-in">
                     <p>I'm always open to discussing new opportunities, creative projects, or ways to bring innovative solutions to your team. Let's connect!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-label">Email</span>
-                            <a href="mailto:dalejr@gmail.com">dalejr@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Phone</span>
-                            <a href="tel:8706350843">(870) 635-0843</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Location</span>
-                            <span>Marion, AR 72364</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-label">Social</span>
-                            <div class="social-links">
-                                <a href="#" target="_blank" aria-label="GitHub">GitHub</a>
-                                <a href="https://www.linkedin.com/in/johnny-l-d-17a643306/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <form class="contact-form fade-in" id="contactForm">
+                <form class="contact-form fade-in" id="contactForm" action="https://formspree.io/f/mlgqdejj" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -573,7 +588,7 @@
             <div class="footer-content">
                 <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="assets/resume.pdf" download>Resume</a>
+                    <a href="assets/Johnny Dale Resume.pdf" download>Resume</a>
                     <a href="#hero">Back to Top</a>
                 </div>
             </div>

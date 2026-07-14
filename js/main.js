@@ -34,9 +34,6 @@ window.addEventListener('scroll', () => {
 // ========================================
 const tabPills = document.querySelectorAll('.tab-pill');
 const tabPanels = document.querySelectorAll('.tab-panel');
-const tabLeft = document.getElementById('tabLeft');
-const tabRight = document.getElementById('tabRight');
-const tabsTrack = document.getElementById('tabsTrack');
 
 tabPills.forEach(pill => {
     pill.addEventListener('click', () => {
@@ -58,17 +55,6 @@ tabPills.forEach(pill => {
         });
     });
 });
-
-// Arrow button navigation
-if (tabLeft && tabRight && tabsTrack) {
-    tabLeft.addEventListener('click', () => {
-        tabsTrack.scrollBy({ left: -150, behavior: 'smooth' });
-    });
-
-    tabRight.addEventListener('click', () => {
-        tabsTrack.scrollBy({ left: 150, behavior: 'smooth' });
-    });
-}
 
 // ========================================
 // Active Nav Link on Scroll
@@ -141,25 +127,50 @@ contactForm.addEventListener('submit', (e) => {
     const email = formData.get('email');
     const message = formData.get('message');
 
-    // Basic validation
     if (!name || !email || !message) {
         alert('Please fill in all fields.');
         return;
     }
 
-    // Simulate form submission
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
 
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
+    fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
+    })
+    .catch(() => {
+        alert('Something went wrong. Please try again.');
+    })
+    .finally(() => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-    }, 1500);
+    });
+});
+
+// ========================================
+// Read More / Read Less Toggle
+// ========================================
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const moreText = btn.previousElementSibling;
+        if (moreText && moreText.classList.contains('more-text')) {
+            moreText.classList.add('expanded');
+            btn.classList.add('expanded');
+        }
+    });
 });
 
 // ========================================
