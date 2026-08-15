@@ -30,33 +30,6 @@ window.addEventListener('scroll', () => {
 });
 
 // ========================================
-// Tab Switching
-// ========================================
-const tabPills = document.querySelectorAll('.tab-pill');
-const tabPanels = document.querySelectorAll('.tab-panel');
-
-tabPills.forEach(pill => {
-    pill.addEventListener('click', () => {
-        const targetTab = pill.getAttribute('data-tab');
-
-        // Remove active class from all pills and panels
-        tabPills.forEach(p => p.classList.remove('active'));
-        tabPanels.forEach(panel => panel.classList.remove('active'));
-
-        // Add active class to clicked pill and target panel
-        pill.classList.add('active');
-        document.getElementById(targetTab).classList.add('active');
-
-        // Re-observe fade-in elements in the new panel
-        const newFadeElements = document.getElementById(targetTab).querySelectorAll('.fade-in');
-        newFadeElements.forEach(element => {
-            element.classList.remove('visible');
-            observer.observe(element);
-        });
-    });
-});
-
-// ========================================
 // Active Nav Link on Scroll
 // ========================================
 const sections = document.querySelectorAll('section[id]');
@@ -86,7 +59,6 @@ window.addEventListener('scroll', updateActiveLink);
 // Scroll Animations (Intersection Observer)
 // ========================================
 const fadeElements = document.querySelectorAll('.fade-in');
-const skillBars = document.querySelectorAll('.skill-progress');
 
 const observerOptions = {
     threshold: 0.1,
@@ -97,14 +69,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-
-            // Animate skill bars when visible
-            if (entry.target.closest('.about-skills')) {
-                skillBars.forEach(bar => {
-                    bar.classList.add('animate');
-                });
-            }
-
             observer.unobserve(entry.target);
         }
     });
@@ -112,65 +76,6 @@ const observer = new IntersectionObserver((entries) => {
 
 fadeElements.forEach(element => {
     observer.observe(element);
-});
-
-// ========================================
-// Contact Form
-// ========================================
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
-
-    if (!name || !email || !message) {
-        alert('Please fill in all fields.');
-        return;
-    }
-
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-
-    fetch(contactForm.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
-        } else {
-            alert('Something went wrong. Please try again.');
-        }
-    })
-    .catch(() => {
-        alert('Something went wrong. Please try again.');
-    })
-    .finally(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    });
-});
-
-// ========================================
-// Read More / Read Less Toggle
-// ========================================
-document.querySelectorAll('.read-more-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const moreText = btn.previousElementSibling;
-        if (moreText && moreText.classList.contains('more-text')) {
-            moreText.classList.add('expanded');
-            btn.classList.add('expanded');
-        }
-    });
 });
 
 // ========================================

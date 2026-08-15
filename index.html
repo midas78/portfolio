@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal resume and portfolio site">
+    <meta name="description" content="Johnny L. Dale Jr. - Software Engineer Portfolio">
     <title>Johnny L. Dale Jr. | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,93 +23,62 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link"><i class="bi bi-person"></i> About</a></li>
+                <li><a href="#projects" class="nav-link"><i class="bi bi-grid"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a></li>
             </ul>
+            <div class="nav-social">
+                <a href="https://github.com/midas78" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/johnny-l-d-17a643306" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
         <div class="hero-bg">
             <video class="hero-video" autoplay muted loop playsinline>
                 <source src="assets/hero-bg.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Johnny L. Dale Jr.</h1>
-<h2 class="hero-title">Software Engineer</h2>
-                <p class="hero-description">Combining more than 10 years of hands-on technical experience with a BS in Software Engineering to build innovative solutions at the intersection of hardware and software.</p>
-                </div>
-            <div class="hero-image">
-                <div class="hero-image-wrapper">
-                    <img src="assets/profile.jpg" alt="Johnny L. Dale Jr." class="profile-image">
-                </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Johnny L. Dale Jr.</h1>
+            <h2 class="hero-title">Software Engineer</h2>
+            <p class="hero-description">Full-stack software engineer with a decade of hobbyist coding experience and a background in industrial maintenance & automation controls.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary"><i class="bi bi-grid"></i> View Projects</a>
+                <a href="assets/Johnny Dale Resume.pdf" class="btn btn-outline" download><i class="bi bi-download"></i> Download Resume</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="section" id="about">
-        <div class="about-bg">
-            <video class="about-video" autoplay muted loop playsinline>
-                <source src="assets/about.MOV" type="video/mp4">
-            </video>
-            <div class="about-overlay"></div>
-        </div>
         <div class="container">
             <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
                 <div class="about-text fade-in">
-<p>I'm a detail-oriented Software Engineer with more than 10 years of industrial technical experience and a newly earned BS in Software Engineering from Western Governors University (March 2026). What sets me apart is the rare combination of deep hands-on electrical and mechanical knowledge with formal software development training — I understand not just how code runs, but how the physical systems it controls actually work.</p>
-
-                    <p>My career began on the factory floor troubleshooting PLCs, motor controls, robotics, and SCADA systems, and has evolved into building modern full-stack applications with React, Angular, Python, PHP, and Java. I've programmed Allen-Bradley and Siemens PLCs, maintained high-speed bottling and packaging lines, and more recently developed web apps with Spring Boot backends, deployed with Docker, and integrated with third-party APIs. That level of experience — from ladder logic to REST APIs — lets me solve problems at every level of the stack.</p>
-
-                    <p>I'm passionate about building software that makes a real impact, whether that means optimizing industrial processes, creating intuitive user interfaces, or connecting legacy systems to modern cloud platforms. Every project I take on benefits from the perspective of someone who has seen technology from both sides: the hardware that makes things move and the code that makes them smart.</p>
-</div>
+                    <p>My name is Johnny Dale. For most of my career, I fixed things you could touch—motors, sensors, control panels, conveyor belts. As an Automation Controls Technician, I learned that every error has a root cause, every system has a pattern, and every fix teaches you something new.</p>
+                    <p>But my curiosity didn't stop at hardware. For over ten years, I've been programming on the side—building web apps, automating workflows, and eventually falling in love with the craft enough to go back for a B.S in Software Engineering. I wanted to understand the whole stack, from the server room to the browser tab.</p>
+                    <p>Now I'm a recent grad who's ready to build software for mission-driven organizations. I bring a rare blend: a technician's hands-on pragmatism, an engineer's systematic thinking, and a hacker's lifelong curiosity. I'm confident in my skills, but I'm even more curious about what I'll learn next.</p>
+                    <p>Outside of code, I'm still a tinkerer at heart. Reach out—I'd love to hear about what you're building and how I can help.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="section section-alt" id="experience">
-        <div class="experience-orb experience-orb--1"></div>
-        <div class="experience-orb experience-orb--2"></div>
+    <section class="section" id="experience">
         <div class="container">
             <h2 class="section-title fade-in">Experience</h2>
-            <div class="tabs-wrapper fade-in">
-                <div class="tabs-container" id="tabsContainer">
-                    <div class="tabs-track" id="tabsTrack">
-                        <button class="tab-pill active" data-tab="software">Software</button>
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="tab-panel active" id="software">
-                <div class="timeline">
+            <div class="timeline">
                     <div class="timeline-item fade-in">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <div class="timeline-tab">Passion Project</div>
                             <div class="timeline-header">
                                 <h3>Wordie — Full-Stack Word Puzzle Game</h3>
                                 <span class="timeline-date">Spring Boot Project</span>
@@ -125,6 +98,7 @@
                     <div class="timeline-item fade-in">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <div class="timeline-tab">WGU D280</div>
                             <div class="timeline-header">
                                 <h3>Interactive World Map Application</h3>
                                 <span class="timeline-date">Angular 19 Project</span>
@@ -143,6 +117,7 @@
                     <div class="timeline-item fade-in">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <div class="timeline-tab">WGU D308</div>
                             <div class="timeline-header">
                                 <h3>Triplet — Vacation & Excursion Planner</h3>
                                 <span class="timeline-date">Android Project</span>
@@ -163,31 +138,70 @@
 
                 <div class="skills-section fade-in">
                     <h3 class="skills-heading">Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <span class="skill-name">HTML / CSS / JavaScript</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                    <div class="credentials-grid">
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-filetype-html"></i></div>
+                            <span>HTML</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python / PHP / Lua</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-filetype-css"></i></div>
+                            <span>CSS</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C# / Dart / Swift</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-filetype-jsx"></i></div>
+                            <span>JavaScript</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SQL</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-filetype-py"></i></div>
+                            <span>Python</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Angular / React / Flutter</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-filetype-php"></i></div>
+                            <span>PHP</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Docker / PostgreSQL / GitLab</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-moon"></i></div>
+                            <span>Lua</span>
                         </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-c-circle"></i></div>
+                            <span>C#</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-arrow-return-right"></i></div>
+                            <span>Dart</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-lightning"></i></div>
+                            <span>Swift</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-database"></i></div>
+                            <span>SQL</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-type"></i></div>
+                            <span>Angular</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-react"></i></div>
+                            <span>React</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-phone"></i></div>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-box"></i></div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-database-fill"></i></div>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="credential-badge">
+                            <div class="credential-icon"><i class="bi bi-git"></i></div>
+                            <span>GitLab</span>
                     </div>
                 </div>
             </div>
@@ -198,79 +212,82 @@
     <section class="section" id="education">
         <div class="container">
             <h2 class="section-title fade-in">Education</h2>
-            <div class="education-grid">
-                <div class="education-card fade-in">
-                    <div class="education-icon">🎓</div>
-                    <h3>B.S. Software Engineering</h3>
-                    <h4>Western Governors University, Salt Lake City, UT</h4>
-                    <span class="education-date">7/2023 - 4/2026</span>
-                    <p>Completed degree with focus on software development, systems design, and modern programming practices.</p>
-                    <img src="assets/degree.jpg" alt="B.S. Software Engineering Degree" class="degree-img">
-                </div>
+            <div class="credentials-grid fade-in">
+                <a href="https://www.wgu.edu" target="_blank" class="credential-badge">
+                    <div class="credential-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <span>B.S. Software Engineering</span>
+                </a>
+                <a href="https://www.credly.com/badges/06bb6407-fd64-48c8-9850-5df5816e5eae/linked_in_profile?trk=public_profile_certification-title" target="_blank" class="credential-badge">
+                    <div class="credential-icon">
+                        <i class="bi bi-cloud"></i>
+                    </div>
+                    <span>AWS Cloud Practitioner</span>
+                </a>
+                <a href="https://badges.parchment.com/public/assertions/aA8nyWZQQrSH1kFUPos5Cw?utm_source=url_copy&identity__email=midas78%40wgu.edu" target="_blank" class="credential-badge">
+                    <div class="credential-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <span>WGU Front-End Developer</span>
+                </a>
+                <a href="https://badges.parchment.com/public/assertions/Isyt6uPbTE63VACe40wNig?utm_source=url_copy&identity__email=midas78%40wgu.edu" target="_blank" class="credential-badge">
+                    <div class="credential-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+                    <span>WGU Back-End Developer</span>
+                </a>
+                <a href="https://www.credly.com/badges/a84fb520-6077-4ca1-ad1e-27195f96d072/public_url" target="_blank" class="credential-badge">
+                    <div class="credential-icon">
+                        <i class="bi bi-kanban"></i>
+                    </div>
+                    <span>CompTIA Project+</span>
+                </a>
+                <a href="https://badges.peoplecert.org/Badge/en/3/A734FF4E-6E27-4793-B2C8-B9C10D6BD1B2" target="_blank" class="credential-badge">
+                    <div class="credential-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <span>ITIL 4 Foundation</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="section section-alt" id="projects">
-        <div class="container">
+    <section class="section" id="projects">
+        <div class="container projects-container">
             <h2 class="section-title fade-in">Projects</h2>
+
+            <!-- Featured Project -->
+            <div class="featured-project fade-in">
+                <div class="featured-project-visual">
+                    <img src="assets/CheckMate.png" alt="CheckMate App Screenshot" class="featured-project-img">
+                </div>
+                <div class="featured-project-content">
+                    <h3>CheckMate</h3>
+                    <p>A native Android app that estimates post-drinking impairment from your eye and motor signals — blink timing, smooth-pursuit pupil response, and head steadiness — captured live through the front camera. It runs a personal baseline calibration while you're sober, then compares later checks against it, plays back the session, and does all of it entirely on-device: no account, no uploads, no backend.</p>
+                    <div class="featured-project-links">
+                        <a href="#" class="btn btn-primary" style="pointer-events: none; opacity: 0.6;"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
             <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/wordie.png" alt="Wordie Game" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>Wordie</h3>
-                        <p>A browser-based word puzzle game inspired by the New York Times Wordle. Built as a passion project featuring a clean, intuitive interface where players guess five-letter words with color-coded feedback. The backend handles word validation and game state management, while the frontend delivers smooth, responsive gameplay.</p>
-                        <div class="project-tech">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://wordie-fhnz.onrender.com/index.html" class="btn btn-project" target="_blank">Live Demo</a>
-                        </div>
-                    </div>
+                <div class="project-card-simple fade-in">
+                    <h3>Wordie</h3>
+                    <p>A browser-based word puzzle game inspired by the New York Times Wordle. Built as a passion project featuring a clean, intuitive interface where players guess five-letter words with color-coded feedback.</p>
+                    <a href="https://wordie-fhnz.onrender.com/index.html" target="_blank" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/worldmap.png" alt="WorldMap Project" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>WorldMap</h3>
-                        <p>An interactive single-page web application built with Angular for WGU's D280 JavaScript Programming course. Features an SVG world map that dynamically pulls and displays detailed country data from the World Bank API, including region, capital, income level, population, and country size in square kilometers. Clicking a country <span class="more-text">triggers event binding that transmits the country code to the parent component, displaying metrics in a clean two-column layout.</span><button class="read-more-btn">more</button></p>
-                        <div class="project-tech">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>HTML/CSS</span>
-                            <span>World Bank API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://worldmap-jnc0.onrender.com" class="btn btn-project" target="_blank">Live Demo</a>
-                        </div>
-                    </div>
+                <div class="project-card-simple fade-in">
+                    <h3>WorldMap</h3>
+                    <p>An interactive single-page web application built with Angular. Features an SVG world map that dynamically pulls and displays detailed country data from the World Bank API.</p>
+                    <a href="https://worldmap-jnc0.onrender.com" target="_blank" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/triplet.png" alt="Triplet Vacation App" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>Triplet</h3>
-                        <p>A secure, database-backed Android mobile application built for WGU's D308 Mobile Application Development course. Triplet is a vacation planning app featuring clean navigation, an intuitive user interface, and object-oriented design. Users can create, manage, and track their vacation itineraries with data persistence and a polished mobile experience.</p>
-                        <div class="project-tech">
-                            <span>Android</span>
-                            <span>Java</span>
-                            <span>SQLite</span>
-                            <span>XML</span>
-                            <span>APK</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://triplet-54ffab.gitlab.io" class="btn btn-project" target="_blank">Live Demo</a>
-                        </div>
-                    </div>
+                <div class="project-card-simple fade-in">
+                    <h3>Triplet</h3>
+                    <p>A secure, database-backed Android mobile application for vacation planning. Featuring clean navigation, an intuitive user interface, and object-oriented design.</p>
+                    <a href="https://triplet-54ffab.gitlab.io" target="_blank" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
             </div>
         </div>
@@ -279,26 +296,10 @@
     <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container">
-            <h2 class="section-title fade-in">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info fade-in">
-                    <p>I'm always open to discussing new opportunities, creative projects, or ways to bring innovative solutions to your team. Let's connect!</p>
-                </div>
-                <form class="contact-form fade-in" id="contactForm" action="https://formspree.io/f/mlgqdejj" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                </form>
+            <div class="contact-cta fade-in">
+                <h2>Let's Work Together</h2>
+                <p>I'm always excited to collaborate, innovate, and build meaningful solutions. Whether you have a project, a job opportunity, or just want to connect — let's talk!</p>
+                <a href="mailto:midas78@wgu.edu" class="btn btn-primary"><i class="bi bi-envelope"></i> Get in Touch</a>
             </div>
         </div>
     </section>
@@ -306,12 +307,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#hero">Back to Top</a>
-                </div>
-            </div>
+            <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved.</p>
         </div>
     </footer>
 
