@@ -78,6 +78,31 @@
                     <div class="timeline-item fade-in">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <div class="timeline-tab">Featured</div>
+                            <div class="timeline-header">
+                                <h3>CheckMate — Post-Drinking Impairment Estimator</h3>
+                                <span class="timeline-date">React Native Project</span>
+                            </div>
+                            <p><strong>Solution.</strong> CheckMate uses the front camera as a sensor. A one-time calibration captures your baseline while sober; every later check runs the same 60-second protocol — hold your face inside a detection ring and follow a dot as it orbits the ring — then scores three signals against your baseline: motor steadiness (how still you hold your head inside the ring), pupil response (how accurately your eyes track the moving focal point, a smooth-pursuit task), and blink analysis (blink timing and pattern across the session). A pure TypeScript scoring model blends the three into an overall indicator, and each check records a video you can replay alongside the results.</p>
+                            <p><strong>Technical highlights.</strong> Real-time vision on-device with React Native 0.86 on the New Architecture (Fabric) with Hermes — react-native-vision-camera v5 streams frames through native frame processors into Google ML Kit face detection, extracting face geometry and landmarks at frame rate with no server and no image upload. A custom signal model scores three derived metrics against a per-user baseline persisted with AsyncStorage, with pure unit-tested scoring functions (Jest). Sessions record via VisionCamera's CameraX-based video output and play back using react-native-video aligned to Media3 1.9 via a targeted patch-package fix. Production Android engineering includes Kotlin native modules, custom app icon/splash, portrait-locked UI, and a device-density-aware layout system, shipped as a universal release APK (arm64 + arm32) built with JDK 17. Privacy is architecture — the app has no backend by design; the camera stream, analysis, and recorded video never leave the device.</p>
+                            <ul class="timeline-tags">
+                                <li>React Native</li>
+                                <li>TypeScript</li>
+                                <li>React 19</li>
+                                <li>Hermes</li>
+                                <li>New Architecture (Fabric)</li>
+                                <li>Kotlin</li>
+                                <li>VisionCamera 5</li>
+                                <li>Google ML Kit</li>
+                                <li>react-native-video / Media3</li>
+                                <li>react-native-sensors</li>
+                                <li>Jest</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
                             <div class="timeline-tab">Passion Project</div>
                             <div class="timeline-header">
                                 <h3>Wordie — Full-Stack Word Puzzle Game</h3>
@@ -267,7 +292,7 @@
                     <h3>CheckMate</h3>
                     <p>A native Android app that estimates post-drinking impairment from your eye and motor signals — blink timing, smooth-pursuit pupil response, and head steadiness — captured live through the front camera. It runs a personal baseline calibration while you're sober, then compares later checks against it, plays back the session, and does all of it entirely on-device: no account, no uploads, no backend.</p>
                     <div class="featured-project-links">
-                        <a href="#" class="btn btn-primary" style="pointer-events: none; opacity: 0.6;"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                        <a href="https://midas78.github.io/checkmate-site/" target="_blank" class="btn btn-primary"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
                     </div>
                 </div>
             </div>
@@ -299,7 +324,7 @@
             <div class="contact-cta fade-in">
                 <h2>Let's Work Together</h2>
                 <p>I'm always excited to collaborate, innovate, and build meaningful solutions. Whether you have a project, a job opportunity, or just want to connect — let's talk!</p>
-                <a href="mailto:midas78@wgu.edu" class="btn btn-primary"><i class="bi bi-envelope"></i> Get in Touch</a>
+                <a href="mailto:johnnydalejr@gmail.com" class="btn btn-primary"><i class="bi bi-envelope"></i> Get in Touch</a>
             </div>
         </div>
     </section>
