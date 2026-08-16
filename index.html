@@ -62,7 +62,7 @@
                 <div class="about-text fade-in">
                     <p>My name is Johnny Dale. For most of my career, I fixed things you could touch—motors, sensors, control panels, conveyor belts. As an Automation Controls Technician, I learned that every error has a root cause, every system has a pattern, and every fix teaches you something new.</p>
                     <p>But my curiosity didn't stop at hardware. For over ten years, I've been programming on the side—building web apps, automating workflows, and eventually falling in love with the craft enough to go back for a B.S in Software Engineering. I wanted to understand the whole stack, from the server room to the browser tab.</p>
-                    <p>Now I'm a recent grad who's ready to build software for mission-driven organizations. I bring a rare blend: a technician's hands-on pragmatism, an engineer's systematic thinking, and a hacker's lifelong curiosity. I'm confident in my skills, but I'm even more curious about what I'll learn next.</p>
+                    <p>Now I'm a recent grad who's ready to build software for mission-driven organizations. I bring a rare blend: a technician's hands-on pragmatism, an engineer's systematic thinking, and an abundance of curiosity. I'm confident in my skills, but I'm even more curious about what I'll learn next.</p>
                     <p>Outside of code, I'm still a tinkerer at heart. Reach out—I'd love to hear about what you're building and how I can help.</p>
                 </div>
             </div>
@@ -238,12 +238,12 @@
         <div class="container">
             <h2 class="section-title fade-in">Education</h2>
             <div class="credentials-grid fade-in">
-                <a href="https://www.wgu.edu" target="_blank" class="credential-badge">
+                <button class="credential-badge" id="degreeBtn">
                     <div class="credential-icon">
                         <i class="bi bi-mortarboard"></i>
                     </div>
                     <span>B.S. Software Engineering</span>
-                </a>
+                </button>
                 <a href="https://www.credly.com/badges/06bb6407-fd64-48c8-9850-5df5816e5eae/linked_in_profile?trk=public_profile_certification-title" target="_blank" class="credential-badge">
                     <div class="credential-icon">
                         <i class="bi bi-cloud"></i>
@@ -335,6 +335,17 @@
             <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Degree Modal -->
+    <div class="modal" id="degreeModal">
+        <div class="modal-overlay" id="degreeModalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="degreeModalClose" aria-label="Close">&times;</button>
+            <h3>B.S. Software Engineering</h3>
+            <p>Western Governors University, Salt Lake City, UT</p>
+            <img src="assets/degree.jpg" alt="B.S. Software Engineering Degree" class="modal-img">
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

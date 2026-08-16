@@ -95,7 +95,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ========================================
-// Typing Effect for Hero (Optional)
+// Degree Modal
+// ========================================
+const degreeBtn = document.getElementById('degreeBtn');
+const degreeModal = document.getElementById('degreeModal');
+const degreeModalClose = document.getElementById('degreeModalClose');
+const degreeModalOverlay = document.getElementById('degreeModalOverlay');
+
+function openDegreeModal() {
+    degreeModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDegreeModal() {
+    degreeModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+degreeBtn.addEventListener('click', openDegreeModal);
+degreeModalClose.addEventListener('click', closeDegreeModal);
+degreeModalOverlay.addEventListener('click', closeDegreeModal);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && degreeModal.classList.contains('active')) {
+        closeDegreeModal();
+    }
+});
 // ========================================
 function typeWriter(element, text, speed = 100) {
     let i = 0;
