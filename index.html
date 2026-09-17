@@ -3,14 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Johnny L. Dale Jr. - Software Engineer Portfolio">
-    <title>Johnny L. Dale Jr. | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="description" content="Johnny L. Dale Jr. — Software Engineer specializing in React Native, Spring Boot, Angular & Android. B.S. Software Engineering, AWS Certified. View projects & contact.">
+    <meta name="author" content="Johnny L. Dale Jr.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://www.johnnyldalejr.online/">
+    <title>Johnny L. Dale Jr. | Software Engineer — React Native, Spring Boot, Angular</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Johnny L. Dale Jr. Portfolio">
+    <meta property="og:title" content="Johnny L. Dale Jr. | Software Engineer">
+    <meta property="og:description" content="Full-stack software engineer with a decade of coding experience. React Native, Spring Boot, Angular, Android. B.S. Software Engineering, AWS Certified.">
+    <meta property="og:url" content="https://www.johnnyldalejr.online/">
+    <meta property="og:image" content="https://www.johnnyldalejr.online/assets/profile.jpg">
+    <meta property="og:image:alt" content="Johnny L. Dale Jr. — Software Engineer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Johnny L. Dale Jr. | Software Engineer">
+    <meta name="twitter:description" content="Full-stack software engineer — React Native, Spring Boot, Angular, Android. View projects and credentials.">
+    <meta name="twitter:image" content="https://www.johnnyldalejr.online/assets/profile.jpg">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/profile.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Johnny L. Dale Jr.",
+        "jobTitle": "Software Engineer",
+        "url": "https://www.johnnyldalejr.online/",
+        "image": "https://www.johnnyldalejr.online/assets/profile.jpg",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Western Governors University"
+        },
+        "sameAs": [
+            "https://github.com/midas78",
+            "https://www.linkedin.com/in/johnny-l-d-17a643306"
+        ],
+        "knowsAbout": ["React Native", "TypeScript", "Java Spring Boot", "Angular", "Android", "PostgreSQL", "Docker", "AWS"]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -28,16 +64,17 @@
                 <li><a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a></li>
             </ul>
             <div class="nav-social">
-                <a href="https://github.com/midas78" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/johnny-l-d-17a643306" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/midas78" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/johnny-l-d-17a643306" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <video class="hero-video" autoplay muted loop playsinline>
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/profile.jpg" aria-hidden="true">
                 <source src="assets/hero-bg.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
@@ -238,42 +275,42 @@
         <div class="container">
             <h2 class="section-title fade-in">Education</h2>
             <div class="credentials-grid fade-in">
-                <button class="credential-badge" id="degreeBtn">
+                <button type="button" class="credential-badge" id="degreeBtn">
                     <div class="credential-icon">
                         <i class="bi bi-mortarboard"></i>
                     </div>
                     <span>B.S. Software Engineering</span>
                 </button>
-                <a href="https://www.credly.com/badges/06bb6407-fd64-48c8-9850-5df5816e5eae/linked_in_profile?trk=public_profile_certification-title" target="_blank" class="credential-badge">
+                <button type="button" class="credential-badge credential-btn" data-title="AWS Cloud Practitioner" data-subtitle="Amazon Web Services" data-image="assets/badge-aws.png" data-url="https://www.credly.com/badges/06bb6407-fd64-48c8-9850-5df5816e5eae/linked_in_profile?trk=public_profile_certification-title">
                     <div class="credential-icon">
                         <i class="bi bi-cloud"></i>
                     </div>
                     <span>AWS Cloud Practitioner</span>
-                </a>
-                <a href="https://badges.parchment.com/public/assertions/aA8nyWZQQrSH1kFUPos5Cw?utm_source=url_copy&identity__email=midas78%40wgu.edu" target="_blank" class="credential-badge">
+                </button>
+                <button type="button" class="credential-badge credential-btn" data-title="WGU Front-End Developer" data-subtitle="Western Governors University" data-image="assets/badge-frontend.png" data-url="https://badges.parchment.com/public/assertions/aA8nyWZQQrSH1kFUPos5Cw?utm_source=url_copy&identity__email=midas78%40wgu.edu">
                     <div class="credential-icon">
                         <i class="bi bi-code-slash"></i>
                     </div>
                     <span>WGU Front-End Developer</span>
-                </a>
-                <a href="https://badges.parchment.com/public/assertions/Isyt6uPbTE63VACe40wNig?utm_source=url_copy&identity__email=midas78%40wgu.edu" target="_blank" class="credential-badge">
+                </button>
+                <button type="button" class="credential-badge credential-btn" data-title="WGU Back-End Developer" data-subtitle="Western Governors University" data-image="assets/badge-backend.png" data-url="https://badges.parchment.com/public/assertions/Isyt6uPbTE63VACe40wNig?utm_source=url_copy&identity__email=midas78%40wgu.edu">
                     <div class="credential-icon">
                         <i class="bi bi-server"></i>
                     </div>
                     <span>WGU Back-End Developer</span>
-                </a>
-                <a href="https://www.credly.com/badges/a84fb520-6077-4ca1-ad1e-27195f96d072/public_url" target="_blank" class="credential-badge">
+                </button>
+                <button type="button" class="credential-badge credential-btn" data-title="CompTIA Project+" data-subtitle="CompTIA" data-image="assets/badge-projectplus.png" data-url="https://www.credly.com/badges/a84fb520-6077-4ca1-ad1e-27195f96d072/public_url">
                     <div class="credential-icon">
                         <i class="bi bi-kanban"></i>
                     </div>
                     <span>CompTIA Project+</span>
-                </a>
-                <a href="https://badges.peoplecert.org/Badge/en/3/A734FF4E-6E27-4793-B2C8-B9C10D6BD1B2" target="_blank" class="credential-badge">
+                </button>
+                <button type="button" class="credential-badge credential-btn" data-title="ITIL 4 Foundation" data-subtitle="PeopleCert" data-image="assets/badge-itil.png" data-url="https://badges.peoplecert.org/Badge/en/3/A734FF4E-6E27-4793-B2C8-B9C10D6BD1B2">
                     <div class="credential-icon">
                         <i class="bi bi-gear"></i>
                     </div>
                     <span>ITIL 4 Foundation</span>
-                </a>
+                </button>
             </div>
         </div>
     </section>
@@ -286,13 +323,13 @@
             <!-- Featured Project -->
             <div class="featured-project fade-in">
                 <div class="featured-project-visual">
-                    <img src="assets/CheckMate.png" alt="CheckMate App Screenshot" class="featured-project-img">
+                    <img src="assets/CheckMate.png" alt="CheckMate Android app — post-drinking impairment estimator with on-device eye tracking" class="featured-project-img" loading="lazy" decoding="async">
                 </div>
                 <div class="featured-project-content">
                     <h3>CheckMate</h3>
                     <p>A native Android app that estimates post-drinking impairment from your eye and motor signals — blink timing, smooth-pursuit pupil response, and head steadiness — captured live through the front camera. It runs a personal baseline calibration while you're sober, then compares later checks against it, plays back the session, and does all of it entirely on-device: no account, no uploads, no backend.</p>
                     <div class="featured-project-links">
-                        <a href="https://midas78.github.io/checkmate-site/" target="_blank" class="btn btn-primary"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                        <a href="https://midas78.github.io/checkmate-site/" target="_blank" rel="noopener" class="btn btn-primary"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
                     </div>
                 </div>
             </div>
@@ -302,17 +339,17 @@
                 <div class="project-card-simple fade-in">
                     <h3>Wordie</h3>
                     <p>A browser-based word puzzle game inspired by the New York Times Wordle. Built as a passion project featuring a clean, intuitive interface where players guess five-letter words with color-coded feedback.</p>
-                    <a href="https://wordie-fhnz.onrender.com/index.html" target="_blank" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://wordie-fhnz.onrender.com/index.html" target="_blank" rel="noopener" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
                 <div class="project-card-simple fade-in">
                     <h3>WorldMap</h3>
                     <p>An interactive single-page web application built with Angular. Features an SVG world map that dynamically pulls and displays detailed country data from the World Bank API.</p>
-                    <a href="https://worldmap-jnc0.onrender.com" target="_blank" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://worldmap-jnc0.onrender.com" target="_blank" rel="noopener" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
                 <div class="project-card-simple fade-in">
                     <h3>Triplet</h3>
                     <p>A secure, database-backed Android mobile application for vacation planning. Featuring clean navigation, an intuitive user interface, and object-oriented design.</p>
-                    <a href="https://triplet-54ffab.gitlab.io" target="_blank" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://triplet-54ffab.gitlab.io" target="_blank" rel="noopener" class="project-link-simple">View Project <i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
             </div>
         </div>
@@ -329,10 +366,13 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved.</p>
+            <p>Johnny L. Dale Jr. &mdash; Software Engineer, United States &middot; <a href="mailto:johnnydalejr@gmail.com">johnnydalejr@gmail.com</a></p>
+            <p>&copy; 2026 Johnny L. Dale Jr. All rights reserved. &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/sitemap.xml">Sitemap</a> &middot; <a href="/.well-known/security.txt">Security</a></p>
         </div>
     </footer>
 
@@ -343,7 +383,19 @@
             <button class="modal-close" id="degreeModalClose" aria-label="Close">&times;</button>
             <h3>B.S. Software Engineering</h3>
             <p>Western Governors University, Salt Lake City, UT</p>
-            <img src="assets/degree.jpg" alt="B.S. Software Engineering Degree" class="modal-img">
+            <img src="assets/degree.jpg" alt="B.S. Software Engineering Degree — Western Governors University" class="modal-img" loading="lazy" decoding="async">
+        </div>
+    </div>
+
+    <!-- Credential Modal -->
+    <div class="modal" id="credentialModal">
+        <div class="modal-overlay" id="credentialModalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="credentialModalClose" aria-label="Close">&times;</button>
+            <h3 id="credentialModalTitle">Credential</h3>
+            <p id="credentialModalSubtitle"></p>
+            <img id="credentialModalImage" src="" alt="Credential badge" class="modal-img credential-modal-img">
+            <a id="credentialModalLink" href="#" target="_blank" rel="noopener" class="btn btn-primary modal-open-link"><i class="bi bi-patch-check"></i> Verify Credential</a>
         </div>
     </div>
 

@@ -82,10 +82,13 @@ fadeElements.forEach(element => {
 // Smooth Scroll for Anchor Links
 // ========================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    if (anchor.id === 'credentialModalLink') return;
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (!href || href.length <= 1) return;
+        const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -116,9 +119,50 @@ degreeBtn.addEventListener('click', openDegreeModal);
 degreeModalClose.addEventListener('click', closeDegreeModal);
 degreeModalOverlay.addEventListener('click', closeDegreeModal);
 
+// ========================================
+// Credential Modal (image, same look as degree modal)
+// ========================================
+const credentialModal = document.getElementById('credentialModal');
+const credentialModalClose = document.getElementById('credentialModalClose');
+const credentialModalOverlay = document.getElementById('credentialModalOverlay');
+const credentialModalTitle = document.getElementById('credentialModalTitle');
+const credentialModalSubtitle = document.getElementById('credentialModalSubtitle');
+const credentialModalImage = document.getElementById('credentialModalImage');
+const credentialModalLink = document.getElementById('credentialModalLink');
+
+function openCredentialModal(title, subtitle, image, url) {
+    credentialModalTitle.textContent = title;
+    credentialModalSubtitle.textContent = subtitle || '';
+    credentialModalImage.src = image;
+    credentialModalImage.alt = title;
+    credentialModalLink.href = url;
+    credentialModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCredentialModal() {
+    credentialModal.classList.remove('active');
+    credentialModalImage.src = '';
+    document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.credential-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        openCredentialModal(btn.dataset.title, btn.dataset.subtitle, btn.dataset.image, btn.dataset.url);
+    });
+});
+
+credentialModalClose.addEventListener('click', closeCredentialModal);
+credentialModalOverlay.addEventListener('click', closeCredentialModal);
+
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && degreeModal.classList.contains('active')) {
-        closeDegreeModal();
+    if (e.key === 'Escape') {
+        if (credentialModal.classList.contains('active')) {
+            closeCredentialModal();
+        }
+        if (degreeModal.classList.contains('active')) {
+            closeDegreeModal();
+        }
     }
 });
 // ========================================
